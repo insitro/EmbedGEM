@@ -3,7 +3,7 @@
 
 EmbedGEM (*Embed*ding *G*enetic *E*valuation *M*ethods) is a Python-based tool for evaluating the utility of machine learning derived embeddings in genetic discovery. It compares traits based on their heritability and ability to identify 'disease relevant' variants. The framework uses genome-wide significant signals and chi-square statistics for heritability evaluation, and computes polygenic risk scores for disease relevance assessment. EmbedGEM is designed for extensibility with more metrics. Its effectiveness has been demonstrated on synthetic and UK Biobank datasets. The workflow of EmbedGEM can be seen below.
 
-[Link to paper](Link_to_biorxiv)
+[Link to paper](https://www.biorxiv.org/content/10.1101/2023.11.24.568344v1)
 
 ![My Image](validation_workflow.png)
 
