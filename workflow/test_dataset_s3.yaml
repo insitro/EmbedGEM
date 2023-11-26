@@ -1,0 +1,36 @@
+#please do not skip any of the options from this template, if needed set to None as they might be referenced in the code
+pheno_prefix: embedGEM_toy_data
+sumstat_dirs:
+  - s3://2023-embedgem/toy_data/sumstats/pheno1/
+  - s3://2023-embedgem/toy_data/sumstats/pheno2/
+s3_output_path: s3://<output path here>
+bfile_template: s3://2023-embedgem/toy_data/bfiles/emb_toy_chr{CHROM}
+chromosomes: #defaults to all chromosomes
+  - "1"
+  - "2"
+  - "3"
+  - "4"
+
+heritability_eval:
+  pval_thresh: 1.0e-3 # default to 5e-8
+  max_p: 1.0e-1 # default to 5e-8
+
+clumping:
+  maf_threshold: 0.0001 # default 0.0001
+  max_kb: 250 # default 250
+  max_pval_all_variants: 0.05 # default 1e-5
+  max_pval_lead_variants: 1.0e-3 # 5e-8
+  min_r2: 0.5 # default 0.5
+
+disease_relevance_options:
+  disease_relevance_bfile_template: s3://2023-embedgem/toy_data/bfiles/emb_toy_chr{CHROM}
+  pheno_file: s3://2023-embedgem/toy_data/test_pheno.tsv
+  covar_file: s3://2023-embedgem/toy_data/test_cov.tsv
+  pheno_id_col: eid
+  cov_id_col: eid
+  cov_cols: ['sex']
+  pheno_type: continuous
+  pheno_col: labels
+  pheno_sep: '\t'
+  cov_sep: '\t'
+  boot_reps: 2000 #default 2000
