@@ -222,3 +222,16 @@ output/
 ```
 
 The folder `disease_relevance_eval` contains the metrics for the evaluation of disease relevance in `multivariate_associations.csv`. Any intermediate files generated in the process are stored in the `scratch` sub-folder. Similarly, the folder `heritability_eval` stores the metrics for the heritability evaluation in `clumped_metrics.tsv`. The `scratch` sub-folder contains the intermediate outputs generated in the process.
+
+## Citing EmbedGEM 
+If you use EmbedGEM in your research, please cite it as: 
+```
+@article{mukherjee2023embedgem,
+  title={EmbedGEM: A framework to evaluate the utility of embeddings for genetic discovery},
+  author={Mukherjee, Sumit and McCaw, Zachary R and Pei, Jingwen and Merkoulovitch, Anna and Tandon, Raghav and Soare, Thomas W and Amar, David and Somineni, Hari and Klein, Christoph and Satapati, Santhosh and others},
+  journal={bioRxiv},
+  pages={2023--11},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
