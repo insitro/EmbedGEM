@@ -3,7 +3,7 @@
 
 EmbedGEM (*Embed*ding *G*enetic *E*valuation *M*ethods) is a Python-based tool for evaluating the utility of machine learning derived embeddings in genetic discovery. It compares traits based on their heritability and ability to identify 'disease relevant' variants. The framework uses genome-wide significant signals and chi-square statistics for heritability evaluation, and computes polygenic risk scores for disease relevance assessment. EmbedGEM is designed for extensibility with more metrics. Its effectiveness has been demonstrated on synthetic and UK Biobank datasets. The workflow of EmbedGEM can be seen below.
 
-[Link to paper](https://www.biorxiv.org/content/10.1101/2023.11.24.568344v1)
+[Link to paper](https://doi.org/10.1093/bioadv/vbae135)
 
 ![My Image](validation_workflow.png)
 
@@ -226,12 +226,12 @@ The folder `disease_relevance_eval` contains the metrics for the evaluation of d
 ## Citing EmbedGEM 
 If you use EmbedGEM in your research, please cite it as: 
 ```
-@article{mukherjee2023embedgem,
+@article{mukherjee2024embedgem,
   title={EmbedGEM: A framework to evaluate the utility of embeddings for genetic discovery},
-  author={Mukherjee, Sumit and McCaw, Zachary R and Pei, Jingwen and Merkoulovitch, Anna and Tandon, Raghav and Soare, Thomas W and Amar, David and Somineni, Hari and Klein, Christoph and Satapati, Santhosh and others},
-  journal={bioRxiv},
-  pages={2023--11},
-  year={2023},
-  publisher={Cold Spring Harbor Laboratory}
+  author={Mukherjee, Sumit and McCaw, Zachary R and Pei, Jingwen and Merkoulovitch, Anna and Soare, Tom and Tandon, Raghav and Amar, David and Somineni, Hari and Klein, Christoph and Satapati, Santhosh and others},
+  journal={Bioinformatics Advances},
+  pages={vbae135},
+  year={2024},
+  publisher={Oxford University Press}
 }
 ```
